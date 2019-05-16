@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+</head>
+
+
+<body>
+<header class="nav">
+   <nav><a href="#"id="blackHeading">H2 zwart</a></nav>
+   <nav><a href="#"id="comicSans">Comic Sans</a></nav>
+   <nav><a href="#"id="beep">Beep</a></nav>
+</header>
+
+    <main>
+        <article>
+            <header>
+                <h2>Titel</h2>
+            </header>
+            <p>Lorem ipsum dolizzle sit that's the shizzle, consectetuer uhuh ... yih! its fo rizzle. Nullizzle sapien
+                fo shizzle, aliquet volutpizzle, crackalackin quizzle, gravida vizzle, fo shizzle. My shizz dang
+                gangsta. Sizzle shiznit. Mofo izzle dolizzle phat fo shizzle my nizzle tempus owned. Maurizzle owned
+                nibh izzle turpis. Da bomb in black. That's the shizzle get down get down rhoncizzle fo shizzle. Daahng
+                dawg dawg habitasse platea mammasay mammasa mamma oo sa. Go to hizzle dapibizzle. Curabitur tellus urna,
+                pretium eu, daahng dawg ac, eleifend da bomb, nunc. Shiz suscipizzle. Integizzle sempizzle pizzle sed .
+            </p>
+
+            <footer>
+                <p id="tekst">My money's in that office, right? If she start giving me some <span> 
+                    bullshit</span> about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that <span>bitch</span> in the kneecaps, find out where my <span>goddamn</span> money is. She gonna tell me too. Hey, look at me when I'm talking to you, <span>motherfucker</span>.
+                    Jackie Brown (1997) </p>
+            </footer>
+        </article>
+
+<div id="accordion">
+<h3>Section 1</h3>
+
+<div>
+    <p>Lorem ipsum dolizzle sit that's the shizzle, consectetuer uhuh ... yih! its fo rizzle. Nullizzle sapien fo shizzle, aliquet volutpizzle, crackalackin quizzle, gravida vizzle, fo shizzle. My shizz dang gangsta. Sizzle shiznit. Mofo izzle dolizzle phat fo shizzle my nizzle tempus owned. Maurizzle owned nibh izzle turpis. Da bomb in black.</p>
+    
+</div>
+
+<h3>Section 2</h3>
+
+<div>
+    <p>Lorem ipsum dolizzle sit that's the shizzle, consectetuer uhuh ... yih! its fo rizzle. Nullizzle sapien fo shizzle, aliquet volutpizzle, crackalackin quizzle, gravida vizzle, fo shizzle. My shizz dang gangsta. Sizzle shiznit. Mofo izzle dolizzle phat fo shizzle my nizzle tempus owned. Maurizzle owned nibh izzle turpis. Da bomb in black.</p>
+    
+</div>
+
+<h3>Section 3</h3>
+
+<div>
+    <p>Lorem ipsum dolizzle sit that's the shizzle, consectetuer uhuh ... yih! its fo rizzle. Nullizzle sapien fo shizzle, aliquet volutpizzle, crackalackin quizzle, gravida vizzle, fo shizzle. My shizz dang gangsta. Sizzle shiznit. Mofo izzle dolizzle phat fo shizzle my nizzle tempus owned. Maurizzle owned nibh izzle turpis. Da bomb in black.</p>
+    
+</div>
+
+</div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var fontColor = '#000';
+         var fontType = "ComicSansMS";
+
+        $( document ).ready(function() {
+            //console.log('hello MAMDT');
+           
+             $('#blackHeading').click(function(){
+                $('h2').css({'color':fontColor});
+            });	
+            
+            $('#comicSans').click(function(){
+                $('body').css({'font-family': fontType });
+            });	
+            $('#beep').click(function(){
+                $('span').text("beep");
+                $('span').css({"text-decoration": "none"});
+            });	
+        });
+         
+        </script>
+
+        <!-- alles in script tag is javascript -->
+<script>
+    $(function() { // voer functie uit zodra DOM klaar is
+        $( "#accordion" ).accordion(); // de accordion functie van jQuery UI
+    });
+    </script>
+
+<div class="divje"> <img src="img/plant.jpg" alt="plant">
+</div>
+<div class="divje">
+    </div>
+
+</body>
+
+</html>
